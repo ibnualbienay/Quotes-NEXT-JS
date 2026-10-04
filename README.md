@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🐍 RANDOM QUOTE
 
-First, run the development server:
+### ✦ A simple Random Quote web app inspired by the elegance of Loki ✦
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<img src="https://media.giphy.com/media/1yT8mW0J8vF3q/giphy.gif" width="180">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **"Every story has a quote worth remembering."**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<br>
 
-## Learn More
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![DummyJSON](https://img.shields.io/badge/API-DummyJSON-green?style=for-the-badge)
 
-To learn more about Next.js, take a look at the following resources:
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🐍 About The Project
 
-## Deploy on Vercel
+**Random Quote** adalah project sederhana berbasis **Next.js** yang menampilkan quote secara random menggunakan API dari **DummyJSON**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Setiap kali tombol **Random Quote** ditekan, aplikasi akan mengambil quote baru dari API.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Project ini dibuat sebagai tugas untuk mempelajari cara menggunakan:
+
+- Next.js
+- TypeScript
+- React Hooks
+- Fetch API
+- REST API
+- Async / Await
+- Responsive Web Design
+
+---
+
+## ✦ Preview
+
+<div align="center">
+
+<img src="./public/tugas.jpg" width="700">
+
+</div>
+
+---
+
+## 🪄 Features
+
+- 🎲 Generate random quote
+- ✍️ Menampilkan quote
+- 👤 Menampilkan author
+- 🔄 Mengambil data langsung dari API
+- 📱 Responsive untuk desktop dan mobile
+- 🐍 Loki-inspired dark green aesthetic
+- ⚡ Dibangun menggunakan Next.js
+
+---
+
+## 🔮 API
+
+Project ini menggunakan endpoint:
+
+```text
+https://dummyjson.com/quotes/random

@@ -1,26 +1,148 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #17251c;
+  color: #f5f1e8;
+}
+
+.quote-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-image: url("/tugas.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 35, 24, 0.38);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 30px;
+  color: #fffdf6;
+  font-size: clamp(32px, 5vw, 42px);
+  font-weight: 600;
+}
+
+.quote-box {
+  width: 100%;
+  padding: 40px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.78);
+  color: #26392d;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  margin: 0 0 24px;
+  font-size: clamp(20px, 3vw, 24px);
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.author {
+  margin: 0 0 28px;
+  color: #657267;
+  font-size: clamp(14px, 2vw, 16px);
+  overflow-wrap: break-word;
+}
+
+button {
+  padding: 11px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #304d39;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #223a2a;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .quote-page {
+    padding: 32px 20px;
+  }
+
+  .content {
+    max-width: 600px;
+  }
+
+  .quote-box {
+    padding: 32px 28px;
+  }
+}
+
+/* HP */
+@media (max-width: 480px) {
+  .quote-page {
+    padding: 24px 16px;
+  }
+
+  .background {
+    background-position: center;
+  }
+
+  h1 {
+    margin-bottom: 22px;
+    font-size: 32px;
+  }
+
+  .quote-box {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .quote {
+    margin-bottom: 20px;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .author {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 20px;
+  }
 }
